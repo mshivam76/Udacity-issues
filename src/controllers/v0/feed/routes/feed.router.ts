@@ -48,18 +48,22 @@ router.patch('/:id',
         const fileName = req.body.url;
            // check Caption is valid
         const item = new FeedItem({
-            caption: caption,
-            url: fileName
         });
+        // console.log(cody.age) // 7
+        // cody = await cody.update({age: 8})
+        // console.log(cody.age) // 8  
         if (!caption) {
             return res.status(400).send({ message: 'Caption is required or malformed' });
         }
 
         // check Filename is valid
-        if (!fileName) {
-            return res.status(400).send({ message: 'File url is required' });
-        }
-        const saved_item = await item.save();
+        // if (!fileName) {
+        //     return res.status(400).send({ message: 'File url is required' });
+        // }
+        const saved_item = await item.update({          
+            caption: caption
+            // url: fileName
+        });
 
         saved_item.url = AWS.getGetSignedUrl(saved_item.url);
         res.status(201).send(saved_item);
