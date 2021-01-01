@@ -65,7 +65,7 @@ router.patch('/:id',
             // url: fileName
         });
 
-        saved_item.url = AWS.getGetSignedUrl(saved_item.url);
+        // saved_item.url = AWS.getGetSignedUrl(saved_item.url);
         res.status(201).send(saved_item);
 });
 
