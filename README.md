@@ -8,6 +8,8 @@ A basic Ionic client web application which consumes the RestAPI Backend.
 2. [The RestAPI Backend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-restapi), a Node-Express server which can be deployed to a cloud service.
 3. [The Image Filtering Microservice](https://github.com/udacity/cloud-developer/tree/master/course-02/project/image-filter-starter-code), the final project for the course. It is a Node-Express application which runs a simple script to process images.
 
+To access deployed Elasticbean Stalk instance:
+http://udagram-mishra-dev-dev2.ap-south-1.elasticbeanstalk.com/api/v0/feed/4
 
 ***
 ## Getting Setup
